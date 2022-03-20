@@ -6,7 +6,9 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -18,8 +20,60 @@ body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
+  font-family: "Source Sans Pro", sans-serif;
+  /* background-image: url("../images/arabesque.png"); */
 }
 
-/*
+nav {
+  height: 120px;
+  width: 100%;
+  background-color: #4056a1;
+  color: #fff;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+nav .logo {
+  font-family: "Bungee", "sans-serif";
+  line-height: 120px;
+}
+nav p {
+  display: inline-block;
+  margin-inline-start: 69%;
+  font-weight: 200;
+  position: relative;
+}
+
+nav p span {
+  font-weight: bold;
+}
+nav p i {
+  position: absolute;
+  bottom: -32px;
+  left: 50%;
+  font-size: 20px;
+  color: red;
+}
+
+.container {
+  margin-inline: 16px;
+}
+
+main {
+  /* text-align: center; */
+  /* display: flex; */
+  /* width: 97%; */
+  float: right;
+  width: 65%;
+}
+
+/* main .tweet {
+  border: 1px solid #000;
+  background-color: rgba(255, 255, 255, 0.4);
+  margin: 20px;
+  border-radius: 20px;
+}
+*/
+/* 
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */

@@ -1,0 +1,38 @@
+.new-tweet {
+  text-align: center;
+  margin: 40px 20px;
+}
+
+.new-tweet label {
+  display: block;
+  text-align: start;
+  margin: 16px;
+}
+
+.new-tweet textarea {
+  width: 100%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid;
+  background-color: #f4f2ef;
+  display: flex;
+  align-items: center;
+  outline-color: white;
+  word-wrap: break-word;
+}
+
+.new-tweet button {
+  color: #fff;
+  background-color: #4056a1;
+  padding: 6px 12px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+}
+
+div.send {
+  display: flex;
+  padding: 10px 26px;
+  justify-content: space-between;
+}

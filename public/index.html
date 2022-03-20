@@ -1,29 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Meta Information -->
-    <title>Tweeter - Home Page</title>
 
-    <!-- External CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
+<head>
+  <!-- Meta Information -->
+  <title>Tweeter - Home Page</title>
 
-    <!-- App CSS -->
-    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+  <!-- External CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- App CSS -->
+  <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/new-tweet.css">
+  <link rel="stylesheet" href="./styles/tweets.css">
+  <!-- External JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    <!-- External JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- App JS -->
+  <script type="text/javascript" src="/scripts/client.js"></script>
+  <script type="text/javascript" src="./scripts/composer-char-counter.js"></script>
+</head>
 
-    <!-- App JS -->
-    <script type="text/javascript" src="/scripts/client.js"></script>
-  </head>
+<body>
+  <!-- Top nav bar (fixed) -->
+  <nav>
+    <span class="logo">tweeter</span>
 
-  <body>
-    <!-- Top nav bar (fixed) -->
-    <nav>
-      <span>tweeter</span>
-    </nav>
+    <p>
+      <span>write </span>a new tweet
+      <i class="fa-solid fa-angles-down"></i>
+    </p>
+  </nav>
 
-    <!-- Page-specific (main) content here -->
-    <main class="container"></main>
-  </body>
+  <header id="main">
+    <div>
+      <img src="/images/profile-hex.png">
+    </div>
+    <!-- <br> -->
+    <div>
+      <h2 class="user-name">Huwaida</h2>
+    </div>
+  </header>
+  <!-- Page-specific (main) content here -->
+  <main class="container">
+    <!-- form to new tweet  -->
+    <section class="new-tweet">
+      <!-- <h2>Compose Tweet</h2> -->
+      <form method="post" action="/tweets/">
+        <label for="tweet-text">What are you humming about?</label>
+        <textarea name="text" id="tweet-text" placeholder="enter your tweet"></textarea>
+        <div class="send">
+          <button type="submit">Tweet</button>
+          <output name="counter" class="counter" for="tweet-text">140</output>
+        </div>
+      </form>
+    </section>
+    <section class="all-tweets">
+      <article class="tweet">
+        <header>
+          <div calss="profile">
+            <img src='./images/avatar.png'>
+            <span> huwaida khalid </span>
+          </div>
+          <div>
+            <p>@email</p>
+          </div>
+        </header>
+        <div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        </div>
+        <footer>
+          <div>
+            <p>20-3-2022 : 7 pm</p>
+          </div>
+          <div>
+            <i class="fas fa-flag"></i>
+            <i class="fas fa-retweet"></i>
+            <i class="fas fa-heart"></i>
+          </div>
+        </footer>
+      </article>
+      <article class="tweet">
+        <header>
+          <div calss="profile">
+            <img src='./images/avatar.png'>
+            <span> huwaida khalid </span>
+          </div>
+          <div>
+            <p>@email</p>
+          </div>
+        </header>
+        <div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        </div>
+        <footer>
+          <div>
+            <p>20-3-2022 : 7 pm</p>
+          </div>
+          <div>
+            <i class="fas fa-flag"></i>
+            <i class="fas fa-retweet"></i>
+            <i class="fas fa-heart"></i>
+          </div>
+        </footer>
+      </article>
+      <article class="tweet">
+        <header>
+          <div calss="profile">
+            <img src='./images/avatar.png'>
+            <span> huwaida khalid </span>
+          </div>
+          <div>
+            <p>@email</p>
+          </div>
+        </header>
+        <div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        </div>
+        <footer>
+          <div>
+            <p>20-3-2022 : 7 pm</p>
+          </div>
+          <div>
+            <i class="fas fa-flag"></i>
+            <i class="fas fa-retweet"></i>
+            <i class="fas fa-heart"></i>
+          </div>
+        </footer>
+      </article>
+    </section>
+
+  </main>
+
+
+
+</body>
+
 </html>

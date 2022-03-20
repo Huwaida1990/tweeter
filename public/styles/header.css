@@ -1,0 +1,15 @@
+header#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #188cd8;
+  padding: 16px;
+  margin: 40px;
+  float: left;
+}
+header#main .user-name {
+  color: #fff;
+  text-shadow: 2px 3px 10px #000;
+  margin-top: 12px;
+}
