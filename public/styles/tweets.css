@@ -32,6 +32,7 @@ article p {
   margin-left: 2%;
   margin-right: 2%;
   font-weight: 600;
+  word-break: break-all;
 }
 
 article footer {

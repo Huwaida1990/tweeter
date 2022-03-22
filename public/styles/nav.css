@@ -1,0 +1,32 @@
+nav {
+  position: fixed;
+  height: 120px;
+  width: 100%;
+  background-color: #4056a1;
+  color: #fff;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  z-index: 999;
+}
+
+nav .logo {
+  font-family: "Bungee", "sans-serif";
+  line-height: 120px;
+}
+nav p {
+  display: inline-block;
+  margin-inline-start: 69%;
+  font-weight: 200;
+  position: relative;
+}
+
+nav p span {
+  font-weight: bold;
+}
+nav p i {
+  position: absolute;
+  bottom: -32px;
+  left: 50%;
+  font-size: 20px;
+  color: red;
+}
