@@ -38,46 +38,43 @@
   <!-- Top nav bar (fixed) -->
   <nav>
     <span class="logo">tweeter</span>
-
-    <p>
-      <span>write </span>a new tweet
-      <i class="fa-solid fa-angles-down"></i>
-    </p>
+    <div class="composeTweet">
+      <span class="write"> <strong>Write</strong> a new tweet</span>
+      <button type="button" id="ToggleButton">
+        <i class="fa-solid fa-angles-down"></i>
+      </button>
+    </div>
   </nav>
-
-  <header id="main">
-    <div>
+  <header class="main">
+    <div class="profile_logo">
       <img src="/images/profile-hex.png">
     </div>
-    <!-- <br> -->
     <div>
-      <h2 class="user-name">Huwaida</h2>
+      <P class="name">Huwaida</P>
     </div>
   </header>
+
   <!-- Page-specific (main) content here -->
   <main class="container">
-    <!-- form to new tweet  -->
     <section class="new-tweet">
-
       <div id="Long" class="error">
         <p>⚠️ Too Long Please Respect our arbitrary limit of 140 char❗❗</p>
       </div>
       <div id="short" class="error">
         <p>⚠️ Please Enter a Tweet❗❗</p>
       </div>
-
-      <form method="post" action="/tweets/" id="tweetForm">
-        <label for="tweet-text">What are you humming about?</label>
-        <textarea name="text" id="tweet-text" placeholder="enter your tweet"></textarea>
-        <div class="send">
-          <button type="submit">Tweet</button>
+      <!-- <h2>Compose Tweet</h2>-->
+      <form id="tweetForm" method="POST" action="/tweets">
+        <textarea name="text" id="tweet-text" placeholder="What are you humming about?" wrap="hard"
+          cols="10"></textarea>
+        <div class="PostTweet">
+          <button type="submit" class="button">Tweet</button>
           <output name="counter" class="counter" for="tweet-text">140</output>
         </div>
       </form>
     </section>
-    <section class="tweetContainer" id="tweetContainer">
+    <section id="tweetContainer">
     </section>
-
   </main>
 
 
